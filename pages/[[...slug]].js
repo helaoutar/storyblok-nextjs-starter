@@ -1,23 +1,15 @@
-import { useEffect }, React from "react";
+import React from "react";
 import Router from "next/router";
 
 import Components from "../components/index";
 import StoryblokService from "../utils/StoryblokService";
-import SEO from "../components/SEO";
 import useStoryblok from "../lib/storyblok-hook";
 import { languages } from "../constants";
 
 const Index = (props) => {
   const story = useStoryblok(props.page.data.story);
 
-  return (
-    <>
-      <SEO
-        seo={{ ...story?.content?.seo, slug: props.slug, lang: story?.lang }}
-      />
-      {Components(story.content, story.uuid)}
-    </>
-  );
+  return <>{Components(story.content, story.uuid)}</>;
 };
 
 Index.getInitialProps = async ({ query, res }) => {

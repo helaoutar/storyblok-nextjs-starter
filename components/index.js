@@ -1,8 +1,10 @@
 import React from "react";
 import Page from "./Page";
+import Paragraph from "./Paragraph";
 
 const Components = {
   page: Page,
+  Paragraph: Paragraph,
 };
 
 export default (blok, uuid) => {

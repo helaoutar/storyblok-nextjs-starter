@@ -42,7 +42,7 @@ If you open `components/index.js` you should see a `Components` object, this is 
 
 ![enter image description here](https://i.ibb.co/bdK48S9/Screenshot-2021-05-15-at-03-42-44.png)
 
-2.  Then let's create a page (let's call it `hello-world`) and add the **Paragraph** component, and let's also give it a content.
+2.  Then let's create a page (let's call it `hello-world`) and add the **Paragraph** component, and let's also give it some content.
 
 | `hello-world` page                                                                              | Add paragraph component to `hello-world`                                                        |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |

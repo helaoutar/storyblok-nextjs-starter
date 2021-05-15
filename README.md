@@ -105,3 +105,6 @@ Now you're good to go! 🎉🎉🎉
 - ISR (Incremental static regeneration) version.
 - How to deploy to Vercel/Netlify.
 - Add Vercel/Netlify serverless functions.
+- Images lazy loading.
+- Markdown rendering.
+- React player (for youtube videos and whatnot).

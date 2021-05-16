@@ -98,7 +98,7 @@ Now you're good to go! 🎉🎉🎉
 ### Remarques:
 
 - Internationalisation is an out of the box feature! just add a new language to your workspace on Storyblok, translate the content, then if you visite `http:// localhost:3000/{language}/hello-world` you should see the content translated.
-- Live editing is also implemented.
+- Live editing and Sitemap generation are also implemented.
 
 ### Upcoming & TODO
 

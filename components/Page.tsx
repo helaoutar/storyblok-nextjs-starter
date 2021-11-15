@@ -1,7 +1,7 @@
 import Components from "./index";
 import SbEditable from "storyblok-react";
 
-export default (props) => {
+const Page = (props) => {
   return (
     <SbEditable content={props.content}>
       {props.content.body.map((blok) => (
@@ -14,3 +14,5 @@ export default (props) => {
     </SbEditable>
   );
 };
+
+export default Page;

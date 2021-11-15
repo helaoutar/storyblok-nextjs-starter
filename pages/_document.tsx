@@ -1,5 +1,4 @@
 import Document, { Head, Main, NextScript } from "next/document";
-import StoryblokService from "../utils/StoryblokService";
 import { ServerStyleSheet } from "styled-components";
 
 let mainLang = "en";
@@ -35,13 +34,6 @@ export default class MyDocument extends Document {
   render() {
     return (
       <html>
-        <Head>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `var StoryblokCacheVersion = '${StoryblokService.getCacheVersion()}';`,
-            }}
-          ></script>
-        </Head>
         <body>
           <Main />
           <NextScript />

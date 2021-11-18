@@ -1,4 +1,7 @@
-export async function fetchAPI(query, { variables, preview } = {}) {
+export async function fetchAPI(
+  query,
+  { variables, preview }: { variables?: any; preview?: boolean }
+) {
   const res = await fetch("https://gapi.storyblok.com/v1/api", {
     method: "POST",
     headers: {
@@ -41,13 +44,16 @@ export async function getAllSlugs(preview = false) {
 }
 
 export async function getAllLanguages() {
-  const data = await fetchAPI(`
+  const data = await fetchAPI(
+    `
     query allLanguages {
       Space {
         languageCodes
       }
     }
-  `);
+  `,
+    {}
+  );
 
   return data?.Space?.languageCodes || [];
 }

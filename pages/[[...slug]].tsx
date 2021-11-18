@@ -2,7 +2,7 @@ import React from "react";
 import Router from "next/router";
 
 import Components from "../components/index";
-import StoryblokService from "../utils/StoryblokService";
+import StoryblokService from "../lib/storyblockService";
 import useStoryblok from "../lib/storyblok-hook";
 import { languages } from "../constants";
 
@@ -23,7 +23,8 @@ Index.getInitialProps = async ({ query, res }) => {
 
   try {
     const page = await StoryblokService.get(
-      `cdn/stories/${slug}?resolve_relations=global_reference.reference`
+      `cdn/stories/${slug}?resolve_relations=global_reference.reference`,
+      {}
     );
 
     return {
